@@ -1,0 +1,199 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media (min-height: 780px) and (max-width : 1400px) {
+	.tabs_header {
+		/*position: absolute;*/
+		bottom: 40px;
+	}
+
+	.tabs_header > div {
+		width: 100%;
+		text-align: center;
+		max-width: 660px;
+	}
+
+	.top_header {
+		margin-top: 150px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.s_tizers .row > div {
+		text-align: center;
+	}
+
+	.tiz_descr {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.tabs_header > div {
+		text-align: left;
+		width: 100%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.tabs_header > div {
+		text-align: left;
+		width: 100%;
+	}
+
+	.form_block {
+		margin-top: 50px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_phone, .logo, h1, h2 {
+		text-align: center !important;
+	}
+
+	.logo {
+		margin-bottom: 20px !important;
+	}
+
+	.top_phone .tab_item {
+		font-size: 25px !important;
+	}
+
+	.tabs_header .tabs span {
+		font-size: 14px;
+	}
+
+	.s_tizers .row > div {
+		text-align: center;
+	}
+
+	.tabs_header > div {
+		text-align: left;
+		width: 100%;
+	}
+
+	.form_block {
+		margin-top: 50px;
+	}
+
+	.s_contacts h2 {
+		margin-bottom: 20px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header {
+
+	}
+
+	.top_header {
+		margin-top: 30px !important;
+	}
+
+	.top_header h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.top_header h2 {
+		font-size: 28px !important;
+	}
+
+	.top_phone, .logo {
+		text-align: center !important;
+	}
+
+	.logo {
+		margin-bottom: 20px !important;
+	}
+
+	.top_phone .tab_item {
+		font-size: 30px !important;
+	}
+
+	.tab_item p {
+		font-size: 12px; 
+	}
+
+	header {
+		min-height: 920px;
+	}
+
+	.profi_right {
+		margin-top: 40px;
+	}
+
+	.form_block {
+		margin-top: 70px;
+	}
+
+	.s_review {
+		min-height: 1000px;
+	}
+
+	.s_review h2 {
+		font-size: 25px;
+	}
+
+	.s_contacts .tabs .tab {
+		padding: 0 20px !important;
+	}
+
+	.s_contacts .contacts_top h2 {
+		font-size: 40px;
+	}
+
+	.s_profi h2 {
+		font-size: 40px;
+	}
+
+	.s_profi .profi_right p {
+		font-size: 15px;
+		padding-top: 15px;
+	}
+
+	.s_profi .profi_right h3 {
+		font-size: 24px;
+	}
+
+	footer p {
+		padding: 0px 20px 0px 20px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.tab_item p {
+		font-size: 10px; 
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

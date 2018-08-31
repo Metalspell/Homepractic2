@@ -1,0 +1,584 @@
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: normal;
+  color: #333;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  background-color: white;
+  -webkit-font-smoothing: antialised;
+  height: 1500px;
+  overflow: x-hidden;
+}
+
+section {
+  padding: 58px 0 68px;
+}
+
+section.s_dark h2, section.s_dark h3, section.s_dark p {
+  color: #fff;
+}
+
+section h2 {
+  color: #003469;
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 50px;
+  font-family: "CleanvertisinLight",sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.my_a {
+  font-size: 100px;
+}
+
+header {
+  min-height: 640px;
+  background-image: url(../img/top_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 56px;
+  font-weight: bold;
+  font-family: "CleanvertisinLight", sans-serif;
+}
+
+header .top_header {
+  margin-top: 70px;
+}
+
+header .top_header h2 {
+  margin: 10px 0 0;
+  font-family: "CleanvertisinLight", sans-serif;
+  font-size: 36px;
+}
+
+header .logo {
+  font-size: 40px;
+  font-family: "RobotoBold", sans-serif;
+  font-weight: bold;
+}
+
+header .top_phone {
+  text-align: right;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .top_phone .wrapper .active {
+  text-decoration: underline;
+}
+
+header .top_phone .tab_item {
+  display: none;
+  font-size: 34px;
+  font-family: "RobotoBold", sans-serif;
+  font-family: bold;
+}
+
+header .top_phone .tab_irem:first-child {
+  display: block;
+}
+
+header .top_phone .tab_content {
+  color: #fff;
+  font-size: 18px;
+  background-color: none;
+  padding: 12px 0px 16px;
+}
+
+header .tabs_header {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+header .tabs_header ul, header .tabs_header li {
+  list-style-type: none;
+}
+
+header .tabs_header ul li:nth-child(1)::before, header .tabs_header li li:nth-child(1)::before {
+  content: url(../img/icon_1.png);
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+header .tabs_header ul li:nth-child(2)::before, header .tabs_header li li:nth-child(2)::before {
+  content: url(../img/icon_2.png);
+  padding-right: 19px;
+  margin-left: 5px;
+}
+
+header .tabs_header ul li:nth-child(3)::before, header .tabs_header li li:nth-child(3)::before {
+  content: url(../img/icon_3.png);
+  padding-right: 18px;
+  margin-left: 5px;
+}
+
+header .tabs_header ul {
+  margin-top: 10px;
+}
+
+header .tabs_header li {
+  margin-top: 5px;
+  word-wrap: break-word;
+  height: auto;
+  display: flex;
+}
+
+header .tabs_header li p {
+  line-height: 20px;
+  font-family: "RobotoBold", sans-serif;
+  padding-right: 5px;
+}
+
+header .tabs_header li::before {
+  display: flex;
+  align-items: center;
+}
+
+header .tabs_header span {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 15px 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: left;
+  font-family: "RobotoBold", sans-serif;
+  transition: all 1s ease;
+}
+
+header .tabs_header span.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+header .tabs_header .tab_content {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+header .tabs_header .tab_content i {
+  background-image: url(../img/icon_1.png);
+}
+
+header .tab_content {
+  /*background-color: rgba(255,255,255,.6);*/
+  padding: 12px 18px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "RobotoBold",sans-serif;
+}
+
+.button_wrap {
+  text-align: right;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 46px;
+  padding: 0px 32px 0px 32px;
+  background-color: #9b1818;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.button.btn_red {
+  background-color: #9b1818;
+}
+
+.button.btn_green {
+  background-color: #67bc5c;
+}
+
+.button.btn_white {
+  background-color: #fff;
+  color: #000;
+}
+
+a.button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.s_tizers {
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  color: #003469;
+  font-family: "CleanvertisinLighr", sans-serif;
+  text-transform: uppercase;
+  padding: 35px 0 0;
+}
+
+.s_tizers span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.s_tizers strong {
+  font-weight: normal;
+  font-size: 20px;
+  display: block;
+}
+
+.s_tizers .row > div {
+  margin-bottom: 35px;
+}
+
+.s_tizers .tiz_img,
+.s_tizers .tiz_descr {
+  display: inline-block;
+  color: #003469;
+}
+
+.s_tizers .tiz_img {
+  font-size: 75px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.s_tizers .tiz_img p {
+  margin-right: 3px;
+  margin-top: 0;
+}
+
+.s_tizers img {
+  padding-right: 10px;
+}
+
+.s_tizers .tiz_descr {
+  padding-left: 5px;
+  word-break: break-all;
+}
+
+.s_tizers .inline {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  max-height: 50px;
+}
+
+.s_tizers .inline .m_top {
+  margin-top: -5px;
+}
+
+.s_tizers .inline {
+  display: flex;
+  align-items: end;
+}
+
+.s_profi {
+  background-color: #ffffff;
+}
+
+.s_profi .profi_item {
+  display: flex;
+  align-items: center;
+}
+
+.s_profi .profi_left {
+  font-size: 100px;
+  display: inline-block;
+}
+
+.s_profi .profi_right {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+}
+
+.s_profi .profi_right h3 {
+  color: #9b1818;
+  font-size: 28px;
+  margin: 0;
+}
+
+.s_profi .profi_right p {
+  font-size: 17px;
+  margin: 0;
+}
+
+.s_profi strong {
+  font-family: "RobotoBold",sans-serif;
+  font-weight: normal;
+}
+
+.s_profi form {
+  background-color: #f7f7f7;
+  padding: 25px 30px;
+  border: #67bc5c 5px solid;
+  border-radius: 5px;
+}
+
+.s_profi form h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 22px;
+  color: #333;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.s_profi form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.s_profi form input,
+.s_profi form select {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  border: #d9d9d9 1px solid;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+  width: 100%;
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+.s_profi form input:focus,
+.s_profi form select:focus {
+  box-shadow: #67bc5c 0 0 0 20pxpx;
+  border-radius: 2px;
+  border-color: #67bc5c;
+}
+
+.s_profi form .button_wrap {
+  text-align: center;
+  margin: 30px 0 10px;
+}
+
+.s_review {
+  background-image: url(../img/middle_bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-position: top center !important;
+  background-size: cover;
+  width: 100%;
+}
+
+.s_review .review_item {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.s_review .review_item h4 {
+  font-family: "Time New Roman", serif;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.s_review .review_item p {
+  float: none;
+  display: inline-block;
+  margin: 30px auto 0;
+  font-size: 15px;
+}
+
+.s_review .review_item .hr {
+  width: 80px;
+  height: 1px;
+  background-color: #cea380;
+  margin: auto;
+}
+
+.s_review .review_item .image_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.s_review .review_item .image_wrap img {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  border: #585a5b 10px solid;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 40px;
+  background: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+
+.owl-nav button i {
+  color: #ede9e9;
+  height: 20px;
+}
+
+.owl-nav .owl-next {
+  right: 10%;
+}
+
+.owl-nav .owl-prev {
+  left: 10%;
+}
+
+.owl-dot {
+  display: none;
+}
+
+.s_back {
+  background-image: url(../img/red_bg.jpg);
+  background-position: top center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.s_back h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 10px 0;
+  color: #fff;
+}
+
+.s_contacts {
+  text-align: center;
+}
+
+.s_contacts .wrapper {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.s_contacts .wrapper .tab_content .map {
+  margin-top: 20px;
+  min-height: 480px;
+  background-color: #e1d6b0;
+}
+
+.s_contacts .contacts_top {
+  text-align: center;
+}
+
+.s_contacts .contacts_top h2 {
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  height: 45px;
+  line-height: 45px;
+}
+
+.s_contacts .contacts_top .tabs {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 30px;
+}
+
+.s_contacts .contacts_top .tabs .tab {
+  float: left;
+  padding: 0 60px;
+  border: #9b1818 5px solid;
+}
+
+.s_contacts .contacts_top .tabs .tab:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.s_contacts .contacts_top .tabs .tab:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.s_contacts .contacts_top .tabs .tab.active {
+  background-color: #9b1818;
+  color: #fff;
+}
+
+footer {
+  padding: 58px 0 68px;
+}
+
+footer h2 {
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0;
+}
+
+footer .button_wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bottom_phone {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #9b1818;
+  margin-top: 60px;
+}
+
+.bottom_phone .wrapper .active {
+  text-decoration: underline;
+}
+
+.bottom_phone .tab_item {
+  display: none;
+  font-size: 34px;
+  font-family: "RobotoBold", sans-serif;
+  font-family: bold;
+}
+
+.bottom_phone .tab_irem:first-child {
+  display: block;
+}
+
+.bottom_phone .tab_content {
+  color: #9b1818;
+  font-size: 18px;
+  background-color: none;
+  padding: 12px 0px 16px;
+  font-weight: bold;
+}

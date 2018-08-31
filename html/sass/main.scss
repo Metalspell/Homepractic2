@@ -1,0 +1,602 @@
+@import "bourbon/bourbon";
+
+$text-color: #333;
+$dark-color: #000;
+$red-color: #9b1818;
+$blue-color: #003469;
+$green-color: #67bc5c;
+
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: normal;
+  color: $text-color;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  background-color: white;
+  -webkit-font-smoothing: antialised; 
+  height: 1500px;
+  overflow: x-hidden;
+}
+
+section {
+  padding: 58px 0 68px;
+
+  &.s_dark {
+    h2,h3,p {
+      color: #fff;
+    }
+  }
+
+  h2 {
+    color: $blue-color;
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 50px;
+    font-family: "CleanvertisinLight",sans-serif;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; 
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; 
+}
+
+.hidden {
+  display: none; 
+}
+
+.my_a {
+  font-size: 100px;
+}
+
+header {
+  min-height: 640px;
+  background-image: url(../img/top_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 56px;
+    font-weight: bold;
+    font-family: "CleanvertisinLight", sans-serif;
+  }
+
+  .top_header {
+    margin-top: 70px;
+
+    h2 {
+      margin: 10px 0 0;
+      font-family: "CleanvertisinLight", sans-serif;
+      font-size: 36px;
+    }
+  }
+
+  .logo {
+    font-size: 40px;
+    font-family: "RobotoBold", sans-serif;
+    font-weight: bold;
+  }
+
+  .top_phone {
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    .wrapper .active {
+      text-decoration: underline;
+    }
+
+    .tab_item {
+      display: none;
+      font-size: 34px;
+      font-family: "RobotoBold", sans-serif;
+      font-family: bold;
+    }
+
+    .tab_irem:first-child {
+      display: block;
+    }
+
+    .tab_content {
+      color: #fff;
+      font-size: 18px;
+      background-color: none;
+      padding: 12px 0px 16px;
+    }
+  }
+
+  .tabs_header {
+    margin-top: 30px;
+    font-size: 18px;
+
+    ul,li {
+      list-style-type: none;
+
+      li:nth-child(1)::before {
+        content: url(../img/icon_1.png);
+        padding-right: 10px;
+        margin-right: 5px;
+      }
+
+      li:nth-child(2)::before {
+        content: url(../img/icon_2.png);
+        padding-right: 19px;
+        margin-left: 5px;
+      }
+
+      li:nth-child(3)::before {
+        content: url(../img/icon_3.png);
+        padding-right: 18px;
+        margin-left: 5px;
+      }
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    li {
+      margin-top: 5px;
+      word-wrap: break-word; 
+      height: auto;
+      display: flex;
+
+      p {
+        line-height: 20px;
+        font-family: "RobotoBold", sans-serif;
+        padding-right: 5px;
+      }
+    }
+
+    li::before {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      display: inline-block;
+      background-color: rgba(255,255,255,.25);
+      padding: 15px 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+      float: left;
+      font-family: "RobotoBold", sans-serif;
+      transition: (all 1.0s ease);
+  
+      &.active {
+        background-color: rgba(255,255,255,.6);
+        color: black;
+      }
+    }
+
+    .tab_content {
+      background-color: rgba(255,255,255,.6);
+
+      i {
+        background-image: url(../img/icon_1.png);
+      }
+    }
+  }
+
+  .tab_content {
+    /*background-color: rgba(255,255,255,.6);*/
+    padding: 12px 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "RobotoBold",sans-serif;
+  }
+}
+
+.button_wrap {
+  text-align: right;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 46px;
+  padding: 0px 32px 0px 32px;
+  background-color: $red_color; 
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "RobotoBold", sans-serif;
+
+  &.btn_red {
+    background-color: $red-color;
+  }
+  &.btn_green {
+    background-color: $green-color;
+  }
+  &.btn_white {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+a.button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.s_tizers {
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  color: $blue-color;
+  font-family: "CleanvertisinLighr", sans-serif;
+  text-transform: uppercase;
+  padding: 35px 0 0;
+
+  span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  strong {
+    font-weight: normal;
+    font-size: 20px;
+    display: block;
+  }
+
+  .row {
+    > div {
+      margin-bottom: 35px;
+    }
+  }
+
+  .tiz_img,
+  .tiz_descr {
+    display: inline-block;
+    color: $blue-color;
+  }
+
+  .tiz_img {
+    font-size: 75px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .tiz_img p {
+    margin-right: 3px;
+    margin-top: 0;
+  }
+
+  img {
+    padding-right: 10px;
+  }
+
+  .tiz_descr {
+    padding-left: 5px;
+    word-break: break-all;
+  }
+
+  .inline {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-height: 50px;
+
+    .m_top {
+      margin-top: -5px;
+    }
+  }
+
+  .inline {
+    display: flex;
+    align-items: end;
+  }
+}
+
+.s_profi {
+  background-color: #ffffff;
+
+  .profi_item {
+    display: flex;
+    align-items: center;
+  }
+
+  .profi_left {
+    font-size: 100px;
+    display: inline-block;
+  }
+
+  .profi_right {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+
+    h3 {
+      color: $red_color;
+      font-size: 28px; 
+      margin: 0; 
+    }
+
+    p {
+      font-size: 17px;
+      margin: 0;
+    }
+  }
+
+  strong {
+    font-family: "RobotoBold",sans-serif;
+    font-weight: normal;
+  }
+
+  form {
+    background-color: #f7f7f7;
+    padding: 25px 30px;
+    border: $green-color 5px solid;
+    border-radius: 5px;
+
+    h2 {
+      text-transform: uppercase;
+      margin-top: 0;
+      font-family: "RobotoBold", sans-serif;
+      font-size: 22px;
+      color: $text-color;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    input,
+    select {
+      display: block;
+      line-height: 40px;
+      height: 40px;
+      border: #d9d9d9 1px solid;
+      box-shadow: 0 0 20px rgba(0,0,0,.06) inset;
+      width: 100%;
+      text-indent: 10px;
+      border-radius: 3px;
+
+
+      &:focus {
+        box-shadow: $green-color 0 0 0 20pxpx;
+        border-radius: 2px;
+        border-color: $green-color;
+      }
+    }
+
+    .button_wrap {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+  }
+}
+
+.s_review {
+  background-image: url(../img/middle_bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-position: top center !important;
+  background-size: cover;
+  width: 100%;
+
+  .review_item {
+    color: #fff;
+    text-align: center;
+    position: relative;
+
+    h4 {
+      font-family: "Time New Roman", serif;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: normal;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      float: none;
+      display: inline-block;
+      margin: 30px auto 0;
+      font-size: 15px;
+    }
+
+    .hr {
+      width: 80px;
+      height: 1px;
+      background-color: #cea380;
+      margin: auto;
+    }
+
+    .image_wrap {
+      display: flex;
+      justify-content: center;
+      
+      img {
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        border: #585a5b 10px solid;
+      }
+    }
+  }
+}
+
+.owl-nav {
+  button {
+    position: absolute;
+    top: 40px;
+    background: rgba(255,255,255, 0.0);
+    border: 0px;
+
+    i {
+      color: #ede9e9;
+      height: 20px;
+    }
+  }
+
+  .owl-next {
+    right: 10%;
+  }
+
+  .owl-prev {
+    left: 10%;
+  }
+}
+
+.owl-dot {
+  display: none;
+}
+.s_back {
+  background-image: url(../img/red_bg.jpg);
+  background-position: top center;
+  text-align: center;
+  padding: 40px 0;
+
+  h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(255,255,255,.13);
+    padding: 10px 0;
+    color: #fff;
+  }
+}
+
+.s_contacts {
+  text-align: center;
+
+  .wrapper {
+    margin-top: 15px;
+    font-size: 18px;
+
+    .tab_content {
+
+      .map {
+        margin-top: 20px;
+        min-height: 480px;
+        background-color: #e1d6b0;
+      }
+
+      .tab_item {
+        p {
+        }
+      }
+    }
+  }
+
+  .contacts_top {
+    text-align: center;
+    
+    h2 {
+      color: #000;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      height: 45px;
+      line-height: 45px;
+    }
+
+    .tabs {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      height: 45px; 
+      line-height: 45px;
+      margin-top: 30px;
+
+      .tab {
+        float: left;
+        padding: 0 60px;
+        border:$red-color 5px solid;
+
+        &:first-child {
+          border-radius: 3px 0 0 3px;
+        }
+        &:last-child {
+          border-radius: 0 3px 3px 0;
+        }
+        &.active {
+          background-color: $red_color;
+          color: #fff;
+        }
+      } 
+    }
+  }
+}
+
+footer {
+  padding: 58px 0 68px;
+
+  h2 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+  } 
+
+  .button_wrap {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.bottom_phone {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $red-color;
+  margin-top: 60px;
+
+  .wrapper .active {
+    text-decoration: underline;
+  }
+
+  .tab_item {
+    display: none;
+    font-size: 34px;
+    font-family: "RobotoBold", sans-serif;
+    font-family: bold;
+  }
+
+  .tab_irem:first-child {
+    display: block;
+  }
+
+  .tab_content {
+    color: $red-color;
+    font-size: 18px;
+    background-color: none;
+    padding: 12px 0px 16px;
+    font-weight: bold;
+  }
+}
